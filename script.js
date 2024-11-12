@@ -24,10 +24,12 @@ function headerShadow() {
   } else {
 
     navHeader.style.boxShadow = "none";
-    navHeader.style.height = "90px";
-    navHeader.style.lineHeight = "90px";
+    navHeader.style.height = "80px";
+    navHeader.style.lineHeight = "80px";
 
   }
+
+  
 }
 
 
@@ -45,7 +47,7 @@ var typingEffect = new Typed(".typedText",{
 const sr = ScrollReveal({
       origin: 'top',
       distance: '80px',
-      duration: 2000,
+      duration: 3000,
       reset: true     
 })
 
@@ -118,3 +120,17 @@ window.addEventListener('scroll', scrollActive)
 
 
 
+const navMenu = document.querySelector('.nav-menu');
+    
+// Add a scroll event listener
+window.addEventListener('scroll', function() {
+  // Check how far we've scrolled
+  const scrollY = window.scrollY;
+  
+  // Define the new top position based on scroll
+  if (scrollY > 50) {
+    navMenu.style.top = '70px';
+  } else {
+    navMenu.style.top = '80px';
+  }
+});
