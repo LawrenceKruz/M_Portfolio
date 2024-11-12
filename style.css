@@ -790,7 +790,7 @@ footer{
         width: 100%;
     }
     .featured-text{
-        margin-top: 60px;
+        margin-top: 80px;
     }
     .nav-menu-btn{
         margin-right: 40px;
@@ -803,6 +803,37 @@ footer{
     }
 }
 
+@media only screen and (max-width: 580px) and (max-height: 620px){
+    .featured-name{
+        font-size: 30px;
+    }
+    .project-box{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
+    }
+    .featured-text{
+        margin-top: 200px;
+    }
+    .nav-menu-btn{
+        margin-right: 40px;
+     }
+     .nav-menu.responsive{
+        right: 0;
+      width: 40%;
+      height: 35%;
+    }
+ .featured-text{
+    margin-bottom: 100px;
+ }
+.featured-box{
+    margin-bottom: 200px;
+}
+}
 
 @media only screen and (max-width: 478px) {
 
