@@ -304,15 +304,15 @@ nav{
 }
 .image{
     margin: auto 0;
-    width: 380px;
-    height: 380px;
+    width: 480px;
+    height: 480px;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
 .image img{
-    width: 380px;
-    height: 380px;
+    width: 480px;
+    height: 480px;
     object-fit: cover;
 }
 @keyframes imgFloat {
@@ -710,24 +710,25 @@ footer{
     }
     .featured-text{
         width: 100%;
-        order: 2;
+        order: 1;
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
+
     }
     .social_icons{
         margin-top: 2em;
     }
     .featured-image{
-        order: 1;
+        order: 2;
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+     
     }
     .image, .image img{
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
     }
     .row{
         display: flex;
@@ -766,5 +767,34 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .featured-text{
+     
+    }
+    .nav-menu-btn{
+        margin-right: 20px;
+    }
+    .image, .image img{
+        width: 250px;
+        height: 250px;
+    }
+    .featured-name{
+        font-size: 25px;
+    }
+    .project-box{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
+    }
+    *{
+        font-size: 13px;
     }
 }
