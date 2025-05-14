@@ -28,10 +28,7 @@ function headerShadow() {
     navHeader.style.lineHeight = "80px";
 
   }
-
-  
 }
-
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
